@@ -1,0 +1,13 @@
+- type: entity
+  id: BaseGptRespondent
+  abstract: true
+  components:
+  - type: ActiveListener
+  - type: GptRespondent
+    temperature: 0.0
+
+# Rennie my beloved <3
+- type: entity
+  id: MobFoxRenaultGPT
+  parent: [MobFoxRenault, BaseGptRespondent]
+  suffix: GPT
